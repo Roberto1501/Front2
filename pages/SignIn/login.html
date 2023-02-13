@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+        <div class="container">
+          <div class="containerLogin">
+            <h1>Sign In</h1>
+            <div class="areaIcons">
+              <img src="../../assets/images/facebook.png" />
+              <img src="../../assets/images/gmail.png" />
+              <img src="../../assets/images/linkedin.png" />
+            </div>
+            <span>Or use your account</span>
+            <form class="form">
+              <input type="text" id="email" placeholder="Email" />
+              <input type="password" id="password" placeholder="Password" />
+              <span>Forgot your password?</span>
+            </form>
+            <button type="button" onclick="acessar()">Login</button>
+          </div>
+    
+          <div class="containerRegister" >
+            <h1>Hello, friend!</h1>
+            <span>Enter your personal details and start journey with us</span>
+            <button onclick="window.location.href='../SignUp/register.html'" >Sing Up</button>
+          </div>
+        </div>
+
+    <script src="./login.js"></script>
+    <script src="../../assets/js/bootstrap.js"></script>
+  </body>
+</html>

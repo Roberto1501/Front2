@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%; 
+    border-radius: 20px;
+}
+
+
+.containerLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    height: 900px;
+    width: 800px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 8px 10px 12px black;
+
+}
+
+.containerRegister{
+    background-color: rgb(240, 10, 106);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    height: 900px;
+    width: 800px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 8px 10px 12px black;
+    color: white;
+
+}
+
+h1{
+    animation: example 4s;
+    font-size: 50px;
+}
+
+
+.areaIcons {
+    margin-top: 30px;
+    cursor: pointer;
+}   
+
+
+.areaIcons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 3px;
+    margin-right: 12px;
+  
+}
+
+.areaIcons img:hover {
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
+
+@keyframes example {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input{
+    border: none;
+    padding: 8px;
+    margin-top: 6px;
+    background-color: rgb(197, 193, 193);
+    color: #ffff;
+    width: 270px;
+    margin-top: 12px;
+}
+
+button{
+    margin-top: 6px;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: orangered;
+    border: none;
+    color: #ffff;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+span{
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+@media screen and (max-width: 800px) {
+    .containerLogin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        width: 300px;
+    }
+    .containerRegister{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        width: 300px;
+    }
+
+    .form input{
+        width: 180px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+    
+    span{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .containerLogin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 200px;
+    }
+    .containerRegister{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 200px;
+    }
+
+    .form input{
+        width: 135px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    span{
+        text-align: center;
+    }
+}
+
+
+

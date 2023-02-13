@@ -1,0 +1,125 @@
+body {
+    background-color: #EAEAEC;
+    margin: 15px;
+}
+
+.main-header {
+    font-family: sans-serif;
+    color: #181c2e;
+}
+
+.section-input {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-input input {
+    margin-right: 20px;
+    padding: 6px;
+    border: none;
+}
+
+#detalhamento {
+    width: 400px;
+}
+
+#btn-sub {
+    padding: 6px;
+    background-color: #3e0464;
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#btn-sub:hover {
+    transform: scale(1.1);
+}
+
+#btn-apagar {
+    padding: 6px;
+    background-color: rgb(148, 7, 7);
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-edit {
+    padding: 6px;
+    background-color: rgb(7, 143, 37);
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+}
+
+tbody > tr:hover {
+    background-color: #c4eeee;
+} 
+
+table tr{
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    border: 2px solid #ddd;
+    padding: 18px;
+}
+
+table th, table td{
+    padding: 12px;
+    text-align: center;
+}
+
+
+table th{
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.margin{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px){
+    table{
+        border: 0;
+    }
+    
+    table caption{
+        font-size: 1.3em;
+    }
+
+    table thead{
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr{
+        border-bottom: 2px solid #ddd;
+        display: block;
+        margin-bottom: .65em;
+    }
+
+    table td{
+        display: block;
+        border-bottom: 2px solid #ddd;
+        text-align: right;
+        font-size: 1.1em;
+    }
+
+    table td::before{
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+
+    table td:last-child{
+        border-bottom: 0;
+    }
+}
